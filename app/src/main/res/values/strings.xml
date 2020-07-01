@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Modbus TCP</string>
+
+    <string name="test_contain">A Silicon Valley icon and philanthropist for the past four decades, Steve Wozniak has helped shape the computing industry with his design of Apple’s first line of products the Apple I and II. He also influenced the popular Macintosh. In 1976, Wozniak and Steve Jobs founded Apple Computer Inc. with Wozniak’s Apple I personal computer. The following year, he introduced his Apple II personal computer, featuring a central processing unit, a keyboard, color graphics, and a floppy disk drive. The Apple II was integral in launching the personal computer industry.</string>
+
+    <!--Display spinner-->
+    <string-array name="display">
+        <item>Signed</item>
+        <item>Unsigned</item>
+        <item>Binary</item>
+        <item>Hex</item>
+    </string-array>
+
+    <string name="welcome">Modbus TCP Welcome</string>
+
+</resources>

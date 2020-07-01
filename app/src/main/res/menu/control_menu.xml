@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RenovateActivity">
+
+    <item
+        android:id="@+id/new_action"
+        android:icon="@drawable/new_icon"
+        android:title="new"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/open_action"
+        android:icon="@drawable/open_icon"
+        android:title="open"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/save_action"
+        android:icon="@drawable/save_icon"
+        android:title="save"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/refresh_action"
+        android:icon="@drawable/refresh_icon"
+        android:title="refresh"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/setup_action"
+        android:icon="@drawable/setup_icon"
+        android:title="setup"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/connection_action"
+        android:icon="@drawable/connection_icon"
+        android:title="connection"
+        app:showAsAction="always"/>
+
+</menu>

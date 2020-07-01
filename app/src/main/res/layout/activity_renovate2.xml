@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Renovate2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/control_tab"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorControlBar"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tabIndicatorHeight="0dp"
+            app:tabMinWidth="48dp"
+            app:tabPaddingStart="16dp"
+            app:tabPaddingEnd="16dp"
+            app:tabGravity="fill"
+            app:tabMode="scrollable" />
+
+        <android.support.v7.widget.Toolbar
+            android:visibility="gone"
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_layout_height"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:titleTextColor="@color/colorClear" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical"
+            android:background="@color/colorClear"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/active_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tx = 1: Err = 0: ID = 1: SR = 1000ms"
+                android:textColor="@color/colorActivity"
+                android:textSize="@dimen/text_activity"/>
+
+            <TextView
+                android:id="@+id/exception_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Exception Status"
+                android:textColor="@color/colorException"
+                android:textSize="@dimen/text_exception"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"/>
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/register_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

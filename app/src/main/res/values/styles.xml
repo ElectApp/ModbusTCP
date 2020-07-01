@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoTitle" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="actionBarTheme">@null</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- Active Tab Text -->
+    <style name="ActiveTabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorActiveTextUnselected</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- Active Tab Layout -->
+    <style name="ActiveTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/ActiveTabTextStyle</item>
+        <item name="tabIndicatorColor">@color/colorActiveTextSelected</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="android:background">@color/colorActiveTabBackgound</item>
+        <item name="tabSelectedTextColor">@color/colorActiveTextSelected</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+</resources>
